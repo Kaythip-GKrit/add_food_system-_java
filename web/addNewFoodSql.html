@@ -1,0 +1,45 @@
+
+<html lang="th">
+    <head>
+        <title>addNewFoodSql</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <style>
+            body{
+                background-color: gray;
+            }
+    </style>
+    <body>
+            <h2>ฟอร์มเพิ่มอาหาร</h2>
+    <form action="AddNewFoodMySql" method="post">
+    ชื่อ:<input type ="text" name="foodName"><br/>
+    ประเภท: 
+    <select name="foodType">
+        <option value="ต้ม">ต้ม</option>
+        <option value="ผัด">ผัด</option>
+        <option value="แกง">แกง</option>
+        <option value="ทอด">ทอด</option>
+        <option value="ยำ">ยำ</option>
+    </select><br/>
+
+    สารอาหาร:
+    <input type="checkbox" name="nutrient" value="โปรตีน">โปรตีน
+    <input type="checkbox" name="nutrient" value="ไขมัน">ไขมัน<br/>
+    <input type="checkbox" name="nutrient" value="วิตามิน">วิตามิน<br/>
+    <input type="checkbox" name="nutrient" value="คาร์โบไฮเดรต">คาร์โบไฮเดรต<br/>
+
+    รสเผ็ด:<br/>
+    <input type="radio" name="hotLevel" value="ไม่เผ็ด">ไม่เผ็ด<br/>
+    <input type="radio" name="hotLevel" value="เผ็ดน้อย">เผ็ดน้อย<br/>
+    <input type="radio" name="hotLevel" value="เผ็ดมาก">เผ็ดมาก<br/>
+    
+    ราคา: <input type="text" name="foodPrice"><br/>
+    <!--ชื่อเล่น : <input type="text" name="nickName" placeholder="Terl"></br>-->
+    <input type="submit" value="เพิ่มอาหาร">
+    
+    
+</form>
+    </body>
+</html>
